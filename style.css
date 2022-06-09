@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: montserrat;
+  
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: black;
+
+}
+
+
+.mainLogo{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    width: 200px;
+    height: auto;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  
+
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+nav a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+
+}
+nav a:hover{
+    /*border: 1px solid white;
+    transition: .3s;*/
+    color: red;
+}
+main{
+    background-color: orange;
+    height: 620px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+h1{
+    font-size: 84xp;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    font-size: 18px;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+div{
+    background-color: black;
+    height: 100px;
+    text-align: center;
+}
+
+div a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+}
+
+
+div a:hover{
+    color:rgb(134, 37, 37);
+
+
+}
+ion-icon {
+    font-size: 64px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+@media only screen and (max-width: 952px){
+    .mainLogo{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        width: 200px;
+        height: auto;
+
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: pink;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .7s;
+
+    }
+    .mainLogo{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        width: 150px;
+        height: auto;
+        
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: black;
+    }
+    /*div{
+        display: block;
+    }*/
+    
+    a:hover,a.active{
+        background-color: none;
+        color: #0082e6;
+    }
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
