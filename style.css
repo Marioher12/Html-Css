@@ -8,13 +8,13 @@
 
 body{
     font-family: montserrat;
-    --nav-height: 80px;
-    padding-top: var(--nav-height);
+    /*--nav-height: 80px;
+    padding-top: var(--nav-height);*/
   
 }
 
 nav{
-    /*height: 80px;*/
+    height: 75px;
     width: 100%;
     background: black;
     
@@ -24,13 +24,12 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    transition: transform 0.2s;
 
 }
 
-.nav--hidden{
+/*.nav--hidden{
     transform: translateY(calc(-1 * var(--nav-height)));
-}
+}*/
 
 
 .mainLogo{
@@ -78,7 +77,7 @@ nav a:hover{
     background-color: orange;
     height: 1000px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 80px;
 }
 
 .main__description{
