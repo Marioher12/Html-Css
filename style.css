@@ -73,21 +73,20 @@ nav a:hover{
     color: red;
 }
 
-.main__container{
-    background-color: orange;
-    height: 1000px;
-    text-align: center;
-    padding-top: 80px;
-}
-
-.main__description{
-    font-size: 18px;
-    color: black;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
 .collection__description{
     padding-top: 20px;
 }
+
+.main__container{
+    background-color: orange;
+    height: auto;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+
 
 .products__container{
     display: grid;
@@ -114,13 +113,63 @@ nav a:hover{
     margin-bottom: 30px;
     height: auto;
 }
+/**---------------soon products for desktop---------------**/
+.new__description{
+    font-size: 18px;
+    color: black;
+    font-family: sans-serif, Arial, "Helvetica Neue", Helvetica ;
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 40px;
+}
 .soon__container{
     background-color: orange;
     text-align: center;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 
 }
+.soon__label{
+    padding-bottom: 40px;
+}
+
+.new__product{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.newProduct1{
+    width: 450px;
+    margin-top: 30px;
+    padding-left: 200px;
+    height: auto;
+}
+
+.newProduct2{
+    width: 450px;
+    margin-top: 30px;
+    padding-right: 200px;
+    height: auto;
+}
+.newProduct3{
+    width: 450px;
+    margin-top: 30px;
+    padding-left: 200px;
+    height: auto;
+}
+.newProduct4{
+    width: 450px;
+    margin-top: 30px;
+    padding-right: 200px;
+    height: auto;
+}
+
+
 
 
 .footer__container{
@@ -223,6 +272,10 @@ ion-icon {
     /*div{
         display: block;
     }*/
+    .main__description{
+        padding-right: 35px;
+        padding-left: 35px;
+    }
 
     .main__container{
         height: auto;
@@ -236,6 +289,42 @@ ion-icon {
         margin: 0 auto;
         height: 90%;
       }
+
+    .soon__container{
+        height: auto;
+    }
+    .new__description{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .new__product{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90%;
+    }
+
+    .newProduct1{
+        padding: 0 0;
+        width: 400px;
+    }
+    .newProduct2{
+        padding: 0 0;
+        width: 400px;
+    }
+    .newProduct3{
+        padding: 0 0;
+        width: 400px;
+    }
+    .newProduct4{
+        padding: 0 0;
+        width: 400px;
+    }
+
+    
     
     a:hover,a.active{
         background-color: none;
